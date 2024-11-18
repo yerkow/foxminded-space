@@ -144,7 +144,7 @@ header {
 
 .content {
   margin-left: 170px;
-  margin-top: 266px;
+  margin-top: 200px;
   z-index: 2;
 
   h1 {
@@ -163,6 +163,8 @@ header {
   }
 
   .elliptical-button {
+    position: fixed;
+    right: 0;
     margin-right: 120px;
     width: 125px;
     height: 125px;
@@ -208,3 +210,37 @@ header {
   //  //        -1px 1px 0 #F8F8F8;
   //}
 }
+
+footer {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 100px;
+  position: fixed;
+  bottom: 0;
+  nav {
+    margin-left: 170px;
+    .nav-link {
+      text-decoration: none;
+      margin-right: 25px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font-size: 18px;
+      font-family: 'Satoshi Bold', system-ui;
+      color: #F8F8F8;
+      opacity: 40%;
+      &:hover {
+        color: darken(#e8e8e8, 5%);
+      }
+
+      &.active {
+        opacity: 1;
+        color: #f8f8f8;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
